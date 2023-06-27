@@ -45,3 +45,11 @@ p {
     font-size: 20px;
     color: #c9cbce;
 }
+
+p.tl-dr {
+    font-style: italic;
+    background-color: rgb(153 153 153 / 26%);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}

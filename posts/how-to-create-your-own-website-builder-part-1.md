@@ -6,6 +6,9 @@ author: 'John Doe'
 readTime: '3 min read'
 thumbnail: 'https://res.cloudinary.com/dhfbnshjv/image/upload/v1686481797/Screen_Shot_frontbuilder_zdpg5n.webp'
 ---
+<p class="tl-dr">📖 tl;dr: A web page created using a website builder is dynamically rendered based on a special kind of 
+data. In its simples form, this data contains html structure and css styles. In this part, we will see how we could use 
+that data to render a web page.</p>
 
 When you start dragging and dropping elements like buttons and images within a website builder, you're essentially giving 
 instructions to the website builder on how your page will look like. These instructions, or preferences, are stored and 
@@ -29,11 +32,9 @@ is how it looks like:
 
 ```js
 const pageData = {
-	id:'dgakGAKdka',
 	type: 'div',
 	children:[
 		{
-			id:'wewkFRDdsg',
 			type: 'heading',
 			children:[],
 			textContent: 'heading 1',
