@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: tex gyre adventor;
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/texgyreadventor-bold-webfont.woff") format("woff")
+}
+
+@font-face {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Mulish-Regular.woff2") format("woff")
+}
+
+body, html, #__next {
+    height: 100%;
+    font-family: "Mulish","sans-serif";
+}
+
+.font-heading {
+    font-family: "tex gyre adventor","sans-serif";
+}
+
+h1, h2 {
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    font-weight: bold;
+    font-family: "tex gyre adventor","sans-serif";
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 20px 0 20px 0;
+    font-size: 20px;
+    color: #c9cbce;
+}
