@@ -27,7 +27,7 @@ export default function Home({ posts }: HomeProps) {
   return (
     <div className="flex flex-col justify-center items-center gap-16 w-full">
       {/*Introduction*/}
-      <div className="flex flex-col justify-center items-center gap-16">
+      <div className="flex flex-col justify-center items-center gap-5">
         <h1 className="h-auto font-bold flex flex-col gap-5 text-center justify-center align-middle">
           <span className="block text-3xl md:text-4xl lg:text-5xl">
             Hi, I am
@@ -90,7 +90,7 @@ export default function Home({ posts }: HomeProps) {
             <li className="list-disc">
               <Link href={`/posts/${post.slug}`}>
                 <a
-                  className="text-2xl text-blue-400 underline underline-offset-1
+                  className="text-xl text-blue-400 underline underline-offset-1
                 hover:text-blue-300 hover:underline-offset-8 transition-all ease-in-out hover:transition-all"
                 >
                   {post.title}
@@ -129,7 +129,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const sortedPosts = posts.sort(
     (a, b) => (new Date(b.date) as any) - (new Date(a.date) as any)
   );
-  console.log({ sortedPosts });
+
   return {
     props: {
       posts: sortedPosts,
