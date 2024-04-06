@@ -80,9 +80,9 @@ export default function Home({ posts }: HomeProps) {
       </div>
       {/*Blog*/}
       <div className="flex flex-col gap-6 w-full mt-28">
-        <h2 className="text-3xl md:text-4xl font-bold flex flex-col gap-5 text-center justify-center align-middle font-heading">
+        {posts.length && <h2 className="text-3xl md:text-4xl font-bold flex flex-col gap-5 text-center justify-center align-middle font-heading">
           Blog
-        </h2>
+        </h2>}
         {posts.map((post) => (
           <ul key={post.slug} className="flex flex-col gap-5">
             {/*<img src={post.thumbnail} alt={post.title} className="w-full" />{" "}*/}
@@ -132,7 +132,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      posts: sortedPosts,
+      posts: [],
     },
   };
 };
